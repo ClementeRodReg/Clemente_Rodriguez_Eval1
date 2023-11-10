@@ -72,8 +72,14 @@ public class PantallaPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Al pulsar en la imagen de Guggenheim manda la foto, su nombre y sus favoritos a la ventana LugarSeleccionado
-                mandar(nomGuggen.getText().toString(), R.drawable.gugenheim);
-
+                Intent mandar = new Intent(PantallaPrincipal.this, LugarSeleccionado.class);
+                mandar.putExtra("clave_Imagen", R.drawable.gugenheim);
+                mandar.putExtra("lugar", nomGuggen.getText().toString());
+                mandar.putExtra("fav_gug", favGuggen.getText().toString());
+                mandar.putExtra("fav_museo", favMuseo.getText().toString());
+                mandar.putExtra("fav_mercado", favMercado.getText().toString());
+                mandar.putExtra("fav_sanma", favSanma.getText().toString());
+                startActivity(mandar);
             }
         });
 
@@ -82,8 +88,14 @@ public class PantallaPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Al pulsar en la imagen de Museo manda la foto, su nombre y sus favoritos a la ventana LugarSeleccionado
-                mandar(nomMuseo.getText().toString(), R.drawable.museovellasartes);
-
+                Intent mandar = new Intent(PantallaPrincipal.this, LugarSeleccionado.class);
+                mandar.putExtra("clave_Imagen", R.drawable.museovellasartes);
+                mandar.putExtra("lugar", nomMuseo.getText().toString());
+                mandar.putExtra("fav_gug", favGuggen.getText().toString());
+                mandar.putExtra("fav_museo", favMuseo.getText().toString());
+                mandar.putExtra("fav_mercado", favMercado.getText().toString());
+                mandar.putExtra("fav_sanma", favSanma.getText().toString());
+                startActivity(mandar);
             }
         });
 
@@ -92,8 +104,14 @@ public class PantallaPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Al pulsar en la imagen de Mercado manda la foto, su nombre y sus favoritos a la ventana LugarSeleccionado
-                mandar(nomMercado.getText().toString(), R.drawable.mercadorivera);
-
+                Intent mandar = new Intent(PantallaPrincipal.this, LugarSeleccionado.class);
+                mandar.putExtra("clave_Imagen", R.drawable.mercadorivera);
+                mandar.putExtra("lugar", nomMercado.getText().toString());
+                mandar.putExtra("fav_gug", favGuggen.getText().toString());
+                mandar.putExtra("fav_museo", favMuseo.getText().toString());
+                mandar.putExtra("fav_mercado", favMercado.getText().toString());
+                mandar.putExtra("fav_sanma", favSanma.getText().toString());
+                startActivity(mandar);
             }
         });
 
@@ -102,21 +120,16 @@ public class PantallaPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Al pulsar en la imagen de San Mames manda la foto, su nombre y sus favoritos a la ventana LugarSeleccionado
-                mandar(nomSanma.getText().toString(), R.drawable.sanmames);
+                Intent mandar = new Intent(PantallaPrincipal.this, LugarSeleccionado.class);
+                mandar.putExtra("clave_Imagen", R.drawable.sanmames);
+                mandar.putExtra("lugar", nomSanma.getText().toString());
+                mandar.putExtra("fav_gug", favGuggen.getText().toString());
+                mandar.putExtra("fav_museo", favMuseo.getText().toString());
+                mandar.putExtra("fav_mercado", favMercado.getText().toString());
+                mandar.putExtra("fav_sanma", favSanma.getText().toString());
+                startActivity(mandar);
             }
         });
 
     }
-
-    public void mandar(String lugarF, int imgref){
-        Intent mandar = new Intent(PantallaPrincipal.this, LugarSeleccionado.class);
-        mandar.putExtra("clave_Imagen", imgref);
-        mandar.putExtra("lugar", lugarF);
-        mandar.putExtra("fav_gug", favGuggen.getText().toString());
-        mandar.putExtra("fav_museo", favMuseo.getText().toString());
-        mandar.putExtra("fav_mercado", favMercado.getText().toString());
-        mandar.putExtra("fav_sanma", favSanma.getText().toString());
-        startActivity(mandar);
-    }
-
 }

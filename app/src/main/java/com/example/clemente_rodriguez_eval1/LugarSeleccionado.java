@@ -48,6 +48,8 @@ public class LugarSeleccionado extends AppCompatActivity {
         //los introduzco en los componentes
         labelLugar.setText(lugar);
 
+        System.out.println(lugar);
+
         if(lugar.equals("Guggenheim")){
             labelFavoritos.setText(fav1);
             labelDescripcion.setText("La entrada general permite conocer la Colección del Museo Guggenheim Bilbao, así \ncomo visitar las exposiciones temporales vigentes, y recorrer el interior del edificio, \nconsiderado una obra emblemática de la arquitectura contemporánea.");
