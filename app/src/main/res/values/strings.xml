@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Clemente_Rodriguez_Eval1</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="favoritos_22">Favoritos: 22</string>
+    <string name="san_mames">San Mames</string>
+    <string name="mercado_de_la_rivera">Mercado de la Rivera</string>
+    <string name="favoritos_7">Favoritos: 7</string>
+    <string name="museo_vellas_artes">Museo Vellas Artes</string>
+    <string name="lugares">Lugares</string>
+</resources>
