@@ -48,8 +48,6 @@ public class LugarSeleccionado extends AppCompatActivity {
         //los introduzco en los componentes
         labelLugar.setText(lugar);
 
-        System.out.println(lugar);
-
         if(lugar.equals("Guggenheim")){
             labelFavoritos.setText(fav1);
             labelDescripcion.setText("La entrada general permite conocer la Colección del Museo Guggenheim Bilbao, así \ncomo visitar las exposiciones temporales vigentes, y recorrer el interior del edificio, \nconsiderado una obra emblemática de la arquitectura contemporánea.");
@@ -59,7 +57,7 @@ public class LugarSeleccionado extends AppCompatActivity {
         }
         else if (lugar.equals("Mercado de la Rivera")) {
             labelFavoritos.setText(fav3);
-            labelDescripcion.setText("El Mercado de La Ribera ha conseguido mantener su esencia a lo largo de su larga historia, \nque suma ya varios siglos. Su principal valor es la tradicional calidad, variedad y frescura del género que ofrece. \nSi te gusta la cocina rebosante de sabor y tradición, aquí encontrarás todos los ingredientes de nuestro entorno rural y costero \nque conforman el recetario culinario tradicional vasco: verduras de las huertas vizcaínas, pescados recién llegados a puerto, \ncarnes criadas con mimo por nuestros ganaderos... ¡Calidad suprema!");
+            labelDescripcion.setText("El Mercado de La Ribera ha conseguido mantener su esencia a lo largo de su larga historia, \nque suma ya varios siglos. Su principal valor es la tradicional calidad, variedad y frescura del género que ofrece. \nSi te gusta la cocina rebosante de sabor y tradición, aquí encontrarás todos los ingredientes de nuestro entorno rural y costero... ¡Calidad suprema!");
         }else{
             labelFavoritos.setText(fav4);
             labelDescripcion.setText("Recorre ‘La Catedral del fútbol’, el estadio galardonado con premios al mejor edificio deportivo del mundo. \nSiente las sensaciones que viven los futbolistas y aficionados en San Mamés, la casa de “los leones”.\n" +

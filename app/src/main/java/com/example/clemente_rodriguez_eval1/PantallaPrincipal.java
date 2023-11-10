@@ -100,7 +100,7 @@ public class PantallaPrincipal extends AppCompatActivity {
         });
 
         //clickable de Mercado de la rivera
-        fotoMuseo.setOnClickListener(new View.OnClickListener() {
+        fotoMercado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Al pulsar en la imagen de Mercado manda la foto, su nombre y sus favoritos a la ventana LugarSeleccionado
@@ -116,7 +116,7 @@ public class PantallaPrincipal extends AppCompatActivity {
         });
 
         //clickable de San Mames
-        fotoMuseo.setOnClickListener(new View.OnClickListener() {
+        fotoSanma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Al pulsar en la imagen de San Mames manda la foto, su nombre y sus favoritos a la ventana LugarSeleccionado
